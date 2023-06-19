@@ -49,10 +49,10 @@ type EventHandler func(e *SSEEvent) error
 // SSEClient is used to connect to SSE stream and receive events. It handles HTTP
 // request creation and reconnects automatically.
 //
-// There appears to be an issue with the OpenAI SSE event server. 
+// There appears to be an issue with the OpenAI SSE event server.
 // No LAST-EVENT-ID is supplied. Therefore resuming after reconnection is difficult.
 // Reconnection will generally start the stream from the beginning of the event stream.
-// Therefore for simplicity we use a very simple mechanism to count processed events and 
+// Therefore for simplicity we use a very simple mechanism to count processed events and
 // skip the pre-seen events on reconnection.
 type SSEClient struct {
 	URL                 string
