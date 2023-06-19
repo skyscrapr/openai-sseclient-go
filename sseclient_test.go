@@ -1,4 +1,4 @@
-package openaisseclient
+package sseclient
 
 import "testing"
 

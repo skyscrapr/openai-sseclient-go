@@ -8,7 +8,7 @@
 //
 // Go context aware. SSE streams can be optionally given a context on start.
 // This gives flexibility to support different stream stopping mechanisms.
-package openaisseclient
+package sseclient
 
 import (
 	"bufio"
