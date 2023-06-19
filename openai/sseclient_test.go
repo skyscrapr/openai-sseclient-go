@@ -1,4 +1,4 @@
-package sseclient
+package openai
 
 import "testing"
 
